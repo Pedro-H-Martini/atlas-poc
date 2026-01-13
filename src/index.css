@@ -1,3 +1,13 @@
+@import "tailwindcss";
+
+/* -------------------------------------------------
+   Tailwind Theme Configuration (v4)
+   -------------------------------------------------*/
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Ofelia", ui-sans-serif, system-ui, sans-serif;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -7,3 +7,8 @@ export async function getProjects() {
     const response = await api.get(`${API_BASE_URL}/api/v1/atlas/projects/`);
     return snakeToCamel(response.data);
 }
+
+export async function getProject(projectUuid: string) {
+    const response = await api.get(`${API_BASE_URL}/api/v1/atlas/projects/${projectUuid}/`);
+    return snakeToCamel(response.data);
+}

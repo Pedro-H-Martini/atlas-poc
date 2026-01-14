@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { ArgusAuthProvider, SecureRoute } from 'argus-auth0-auth-react'
 import { MainLayout } from './components/layout/MainLayout'
 
 import './App.css'
@@ -6,9 +7,13 @@ import './App.css'
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />} />
-    </Routes>
+    <ArgusAuthProvider>
+      <SecureRoute>
+      <Routes>
+          <Route path="/" element={<MainLayout />} />
+        </Routes>
+      </SecureRoute>
+    </ArgusAuthProvider>
   )
 }
 

@@ -1,0 +1,65 @@
+{
+  "name": "argus-auth0-auth-react",
+  "version": "19.0.1",
+  "description": "Comprehensive Auth0 authentication solution for React applications",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "start": "npm run build && npm install --prefix example && npm run dev --prefix example"
+  },
+  "peerDependencies": {
+    "@auth0/auth0-react": "^2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.2"
+  },
+  "devDependencies": {
+    "@auth0/auth0-react": "^2.11.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vitest/coverage-v8": "^3.1.2",
+    "axios-mock-adapter": "^2.1.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "happy-dom": "^20.0.11",
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^26.1.0",
+    "ts-jest": "^29.3.1",
+    "ts-jest-mock-import-meta": "^1.3.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.1.2"
+  },
+  "keywords": [
+    "auth0",
+    "authentication",
+    "react",
+    "oauth",
+    "oidc",
+    "sso"
+  ],
+  "author": "Argus Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0"
+  }
+}

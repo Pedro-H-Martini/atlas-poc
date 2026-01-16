@@ -1,18 +1,21 @@
 import { Routes, Route } from 'react-router-dom'
 import { ArgusAuthProvider, SecureRoute } from 'argus-auth0-auth-react'
 import { MainLayout } from './components/layout/MainLayout'
-
-import './App.css'
+import LoginPage from './pages/LoginPage'
+import ProjectList from './pages/projects/projectList'
 
 function App() {
 
   return (
     <ArgusAuthProvider>
-      <SecureRoute>
       <Routes>
-          <Route path="/" element={<MainLayout />} />
+          <Route path="/" element={<LoginPage />} />
+        <Route element={<SecureRoute />}>
+          <Route element={<MainLayout />}>
+          <Route path="/projects" element={<ProjectList />} />
+        </Route>
+        </Route>
         </Routes>
-      </SecureRoute>
     </ArgusAuthProvider>
   )
 }

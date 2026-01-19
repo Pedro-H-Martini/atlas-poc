@@ -1,5 +1,4 @@
 
-import { ProjectSite } from "./project-sites";
 
 export interface Project {
     uuid: string;
@@ -7,7 +6,7 @@ export interface Project {
     stage: string;
     optimizationParameters?: OptimizationParameters;
     commercialParameters?: CommercialParameters;
-    sites: ProjectSite[];
+    sites: any[];
     createdAt: string;
     updatedAt: string;
 }

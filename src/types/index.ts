@@ -4,3 +4,7 @@ export type {
     CreateProjectRequest,
     ProjectSummary,
 } from "./projects";
+
+export type UuidDTO = {
+    uuid: string;
+} 

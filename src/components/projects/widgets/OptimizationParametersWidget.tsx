@@ -102,7 +102,6 @@ export default function OptimizationParametersWidget({ isMaximized, onMaximizeTo
                         </p>
                     )}
                 </div>
-                {/* <button onClick={() => handleSubmit(onSubmit)}>Submit</button> */}
             </form>
 
 

@@ -1,5 +1,8 @@
 import { PageHeader } from "@/components/layout/PageHeader";
+import CommercialParametersWidget from "@/components/projects/widgets/CommercialParametersWidget";
+import MapWidget from "@/components/projects/widgets/MapWidget";
 import OptimizationParametersWidget from "@/components/projects/widgets/OptimizationParametersWidget";
+import CommercialSummaryWidget from "@/components/projects/widgets/CommercialSummaryWidget";
 import { Button } from "@/components/ui/button";
 import { useProject } from "@/hooks/useProjects";
 import { useResponsiveGridLayout } from "@/hooks/useResponsiveGridLayout";
@@ -81,6 +84,15 @@ export default function ProjectDetails() {
             >
               <div key="optimizationParams" className={`${!isVisible("optimizationParams") ? "hidden" : ""}`}>
                 <OptimizationParametersWidget isMaximized={maximizedPanels.includes("optimizationParams")} onMaximizeToggle={() => toggleMaximize("optimizationParams")} />
+              </div>
+              <div key="commercialParams" className={`${!isVisible("commercialParams") ? "hidden" : ""}`}>
+                <CommercialParametersWidget isMaximized={maximizedPanels.includes("commercialParams")} onMaximizeToggle={() => toggleMaximize("commercialParams")} />
+              </div>
+              <div key="map" className={`${!isVisible("map") ? "hidden" : ""}`}>
+                <MapWidget isMaximized={maximizedPanels.includes("map")} onMaximizeToggle={() => toggleMaximize("map")} />
+              </div>
+              <div key="commercialSummary" className={`${!isVisible("commercialSummary") ? "hidden" : ""}`}>
+                <CommercialSummaryWidget isMaximized={maximizedPanels.includes("commercialSummary")} onMaximizeToggle={() => toggleMaximize("commercialSummary")} />
               </div>
             </Responsive>
           )}

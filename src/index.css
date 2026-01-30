@@ -3,6 +3,7 @@
    -------------------------------------------------*/
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "leaflet/dist/leaflet.css";
 /* -------------------------------------------------------------------
    PAC Group · Tailwind + shadcn theme tokens
    Cards‑Squared, Others                                      
@@ -57,7 +58,8 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url("/fonts/Roboto/Roboto-Thin.woff2") format("woff2"),
+  src:
+    url("/fonts/Roboto/Roboto-Thin.woff2") format("woff2"),
     url("/fonts/Roboto/Roboto-Thin.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Thin.ttf") format("truetype");
 }
@@ -66,7 +68,8 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("/fonts/Roboto/Roboto-Light.woff2") format("woff2"),
+  src:
+    url("/fonts/Roboto/Roboto-Light.woff2") format("woff2"),
     url("/fonts/Roboto/Roboto-Light.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Light.ttf") format("truetype");
 }
@@ -76,7 +79,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+  src:
+    url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
     url("/fonts/Roboto/Roboto-Regular.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
@@ -86,7 +90,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
+  src:
+    url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
     url("/fonts/Roboto/Roboto-Medium.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
 }
@@ -96,7 +101,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
+  src:
+    url("/fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
     url("/fonts/Roboto/Roboto-Bold.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
 }
@@ -106,7 +112,8 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("/fonts/Roboto/Roboto-Black.woff2") format("woff2"),
+  src:
+    url("/fonts/Roboto/Roboto-Black.woff2") format("woff2"),
     url("/fonts/Roboto/Roboto-Black.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Black.ttf") format("truetype");
 }
@@ -115,7 +122,8 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-Light.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-Light.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-Light.woff") format("woff");
 }
 
@@ -124,7 +132,8 @@
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-LightItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-LightItalic.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-LightItalic.woff") format("woff");
 }
 
@@ -133,7 +142,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-Regular.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-Regular.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-Regular.woff") format("woff");
 }
 
@@ -142,7 +152,8 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-Italic.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-Italic.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-Italic.woff") format("woff");
 }
 
@@ -151,7 +162,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-Medium.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-Medium.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-Medium.woff") format("woff");
 }
 
@@ -160,7 +172,8 @@
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-MediumItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-MediumItalic.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-MediumItalic.woff") format("woff");
 }
 
@@ -169,7 +182,8 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-Semibold.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-Semibold.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-Semibold.woff") format("woff");
 }
 
@@ -178,7 +192,8 @@
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-SemiboldItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-SemiboldItalic.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-SemiboldItalic.woff") format("woff");
 }
 
@@ -187,7 +202,8 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-Bold.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-Bold.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-Bold.woff") format("woff");
 }
 
@@ -196,7 +212,8 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Ofelia/OfeliaText-BoldItalic.woff2") format("woff2"),
+  src:
+    url("/fonts/Ofelia/OfeliaText-BoldItalic.woff2") format("woff2"),
     url("/fonts/Ofelia/OfeliaText-BoldItalic.woff") format("woff");
 }
 
@@ -206,7 +223,6 @@
    Border color compatibility (Tailwind v4)
    -------------------------------------------------------------------*/
 @layer base {
-
   *,
   ::after,
   ::before,
@@ -315,7 +331,6 @@
 
 /***** 3. CSS using generated utilities *****/
 @layer base {
-
   /* Body uses Roboto */
   body {
     @apply font-sans bg-background text-foreground;
@@ -328,8 +343,14 @@
   h4,
   h5,
   h6 {
-    font-family: "Ofelia", "Roboto", ui-sans-serif, system-ui, -apple-system,
-      "Segoe UI", sans-serif;
+    font-family:
+      "Ofelia",
+      "Roboto",
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      sans-serif;
     letter-spacing: 0.05em;
     /* Add tight letter spacing */
     font-weight: 600;
@@ -417,12 +438,12 @@
    React Grid Layout Styling
    -------------------------------------------------------------------*/
 
-.react-grid-item>.react-resizable-handle::after {
+.react-grid-item > .react-resizable-handle::after {
   border-right-color: var(--color-primary);
   border-bottom-color: var(--color-primary);
 }
 
-.react-grid-item:hover>.react-resizable-handle::after {
+.react-grid-item:hover > .react-resizable-handle::after {
   border-right-color: var(--color-primary);
   border-bottom-color: var(--color-primary);
 }
